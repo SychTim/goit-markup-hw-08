@@ -1,0 +1,20 @@
+.header__logo {
+    margin-right: 93px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $accent;
+    text-decoration: none;
+}
+
+.logo__studio {
+    color: $color-logo;
+}
+
+.logo__studio--white {
+    color: $color-logo-footer;
+}
