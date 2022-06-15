@@ -55,8 +55,8 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .svg {
@@ -84,8 +84,8 @@ img {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
@@ -588,11 +588,11 @@ img {
 }
 
 .features__item {
-  width: 270px;
+  width: 100%;
 }
 
 .features__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .features__svg {
@@ -618,6 +618,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {
@@ -629,6 +630,7 @@ img {
 
 .make {
   padding-top: 0;
+  display: none;
 }
 
 .make__item {
@@ -670,7 +672,7 @@ img {
 }
 
 .team__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__name {
@@ -694,9 +696,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 16px;
@@ -726,13 +728,32 @@ img {
   background-color: #2196F3;
 }
 
-.clients__item + .clients__item {
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__item {
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.clients__item:nth-child(2n) {
   margin-left: 30px;
 }
 
+.clients__item:nth-last-child(-n + 2) {
+  margin-bottom: 0px;
+}
+
 .clients__link {
-  display: block;
-  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -740,7 +761,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;

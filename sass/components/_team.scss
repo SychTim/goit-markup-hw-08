@@ -16,8 +16,12 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
 
     &:not(:last-child) {
-            margin-right: 30px;
-        }
+        margin-bottom: 30px;
+    }
+
+    // &:not(:last-child) {
+    //         margin-right: 30px;
+    //     }
 }
 
 .team__name {
@@ -39,7 +43,7 @@
 
 .team__media-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-right: 32px;
     padding-left: 32px;
     padding-top: 16px;

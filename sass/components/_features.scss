@@ -8,11 +8,19 @@
 // }
 
 .features__item {
-    width: 270px;
-
+    width: 100%;
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
+
+
+
+
+//     width: 270px;
+
+//     &:not(:last-child) {
+//         margin-right: 30px;
+//     }
 }
 
 
@@ -33,6 +41,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center
 }
 
 .features__text {
