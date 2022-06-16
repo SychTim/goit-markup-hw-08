@@ -17,26 +17,49 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <a href="./" class="logo header__logo">Web<span class="logo__studio">Studio</span></a>
-            <nav>
-                <ul class="nav list">
-                    <li><a href="./index.html" class="link nav__link">Студия</a></li>
-                    <li><a href="portfolio.html" class="link nav__link nav__link--active">Портфолио</a></li>
-                    <li><a href="" class="link nav__link">Контакты</a></li>
+            <a href="./" class="logo header__logo" is-hidden>Web<span class="logo__studio">Studio</span></a>
+            <button class="mobile-menu__btn" type="button" data-menu-button aria-expanded="false"
+                aria-controls="menu-container">
+                <svg class="svg" width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                    <use href=".//images/symbol-defs.svg#close-menu"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu" data-menu>
+                <nav>
+                    <ul class="nav list">
+                        <li class="nav__item"><a href="./index.html" class="link nav__link">Студия</a></li>
+                        <li class="nav__item"><a href="portfolio.html" class="link nav__link nav__link--active">Портфолио</a></li>
+                        <li class="nav__item"><a href="" class="link nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="header__kontakts list">
+                    <li><a href="mailto:info@devstudio.com" class="link kontakts__link">
+                            <svg class="kontacts__icon svg" width="16" height="14">
+                                <use href="./images/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li><a href="tel:+380961111111" class="link kontakts__link kontacts__tel">
+                            <svg class="kontacts__icon svg" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#smartphone1"></use>
+                            </svg>
+                            +38 096 111 11 11</a></li>
                 </ul>
-            </nav>
-            <ul class="header__kontakts list">
-                <li><a href="mailto:info@devstudio.com" class="link kontakts__link">
-                        <svg class="kontacts__icon svg" width="16" height="14">
-                            <use href="./images/symbol-defs.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link kontakts__link">
-                        <svg class="kontacts__icon svg" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#smartphone1"></use>
-                        </svg>
-                        +38 096 111 11 11</a></li>
-            </ul>
+                <ul class="header__social-media list">
+                    <li class="social-media__item">
+                        <a class="social-media__link link" href="">Instagram</a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link link" href="">Twitter</a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link link" href="">Facebook</a>
+                    </li>
+                    <li class="social-media__item">
+                        <a class="social-media__link link" href="">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -53,7 +76,12 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/texnoryak.jpg" alt="">
+                                <img 
+                                    srcset="./images/portfolio/tehnor450.jpg 450w, ./images/portfolio/tehnor900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw"
+                                    src="./images/portfolio/tehnor450.jpg" 
+                                    alt="Технокряк"
+                                    >
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
                             </div>
@@ -66,7 +94,11 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/poster.jpg" alt="">
+                                <img srcset="./images/portfolio/poster450.jpg 450w, ./images/portfolio/poster900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/poster450.jpg" 
+                                    alt="Постер New Orlean vs Golden Star"
+                                    >
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -80,7 +112,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/restoran.jpg" alt="">
+                                <img srcset="./images/portfolio/restor450.jpg 450w, ./images/portfolio/restor900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/restor450.jpg"
+                                    alt="Ресторан Seafood">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -94,7 +129,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/prime.jpg" alt="">
+                                <img srcset="./images/portfolio/prime450.jpg 450w, ./images/portfolio/prime900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/prime450.jpg"
+                                    alt="Проект Prime">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -108,7 +146,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/boxes.jpg" alt="">
+                                <img srcset="./images/portfolio/boxes450.jpg 450w, ./images/portfolio/boxes900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/boxes450.jpg"
+                                    alt="Проект Boxes">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -122,7 +163,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/inspiration.jpg" alt="">
+                                <img srcset="./images/portfolio/inspir450.jpg 450w, ./images/portfolio/inspir900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/inspir450.jpg"
+                                    alt="Inspiration has no Borders">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -136,7 +180,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/izdanie.jpg" alt="">
+                                <img srcset="./images/portfolio/limed450.jpg 450w, ./images/portfolio/limed900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/limed450.jpg"
+                                    alt="Издание Limited Edition">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -150,7 +197,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/lab.jpg" alt="">
+                                <img srcset="./images/portfolio/prolab450.jpg 450w, ./images/portfolio/prolab900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/prolab450.jpg"
+                                    alt="Проект LAB">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -164,7 +214,10 @@
                     <li class="card">
                         <a href="" class="link card__link">
                             <div class="card__overlay">
-                                <img src="./images/growing.jpg" alt="">
+                                <img srcset="./images/portfolio/growbus450.jpg 450w, ./images/portfolio/growbus900.jpg 900w"
+                                    sizes="(min-width: 1200) 25vw, (min-width: 768) 50vw, 95vw" 
+                                    src="./images/portfolio/growbus450.jpg" 
+                                    alt="Growing Business">
                                 <p class="card__inscription">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                                     это позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -242,5 +295,6 @@
             </form>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

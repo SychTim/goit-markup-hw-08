@@ -36,20 +36,29 @@
             }
         }
     }
+    @media screen and (min-width: $desctop) {
+        padding: 200px 0;
+    }
 }
 
 .hero__title {
-    // width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
     font-size: 26px;
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: $color-h1;
 
-    
+    @media screen and (min-width: $tablet) {
+        width: 360px;
+    }
+
+    @media screen and (min-width: $desctop) {
+        font-size: 44px;
+        width: 696px;
+
+    }
 }

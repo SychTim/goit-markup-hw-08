@@ -1,11 +1,14 @@
 .make {
     padding-top: 0;
     display: none;
+    @media screen and (min-width: $desctop) {
+        display: block;
+    }
 }
 
-// .make__list {
-//     display: flex;
-// }
+.make__list {
+    display: flex;
+}
 
 .make__item {
     position: relative;
