@@ -20,8 +20,8 @@
             <a href="./" class="logo header__logo" is-hidden>Web<span class="logo__studio">Studio</span></a>
             <button class="mobile-menu__btn" type="button" data-menu-button aria-expanded="false" aria-controls="menu-container">
                 <svg class="svg" width="40" height="40">
-                    <use href="./images/symbol-defs.svg#icon-menu"></use>
-                    <use href=".//images/symbol-defs.svg#close-menu"></use>
+                    <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+                    <use class="icon-cros" href=".//images/symbol-defs.svg#close-menu"></use>
                 </svg>
             </button>
             <div class="mobile-menu" data-menu>
@@ -33,12 +33,12 @@
                     </ul>
                 </nav>
                 <ul class="header__kontakts list">
-                    <li><a href="mailto:info@devstudio.com" class="link kontakts__link">
+                    <li class="kontakts__item"><a href="mailto:info@devstudio.com" class="link kontakts__link">
                             <svg class="kontacts__icon svg" width="16" height="14">
                                 <use href="./images/symbol-defs.svg#envelope"></use>
                             </svg>
                             info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111" class="link kontakts__link kontacts__tel">
+                    <li class="kontakts__item"><a href="tel:+380961111111" class="link kontakts__link kontacts__tel">
                             <svg class="kontacts__icon svg" width="10" height="16">
                                 <use href="./images/symbol-defs.svg#smartphone1"></use>
                             </svg>
@@ -190,7 +190,7 @@
                             srcset="./images/team/igor450.jpg 450w, ./images/team/igor900.jpg 900w" 
                             src="./images/team/igor450.jpg" 
                             alt="фото Игоря Демьяненко" 
-                            sizes="(min-width: 1200) 16vw, (min-width: 768) 50vw, 95vw"
+                            sizes="(min-width: 1200px) 16vw, (min-width: 768px) 50vw, 95vw"
                         >
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="text team__position">Product Designer</p>
@@ -222,7 +222,7 @@
                             srcset="./images/team/olga450.jpg 450w, ./images/team/olga900.jpg 900w" 
                             src="./images/team/olga450.jpg" 
                             alt="фото Ольги Репиной" 
-                            sizes="(min-width: 1200) 16vw, (min-width: 768) 50vw, 95vw"
+                            sizes="(min-width: 1200px) 16vw, (min-width: 768px) 50vw, 95vw"
                         >
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="text team__position">Frontend Developer</p>
@@ -254,7 +254,7 @@
                             srcset="./images/team/nikolay450.jpg 450w, ./images/team/nikolay900.jpg 900w" 
                             src="./images/team/nikolay450.jpg" 
                             alt="фото Николая Тарасова" 
-                            sizes="(min-width: 1200) 16vw, (min-width: 768) 50vw, 95vw"
+                            sizes="(min-width: 1200px) 16vw, (min-width: 768px) 50vw, 95vw"
                         >
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p class="text team__position">Marketing</p>
@@ -286,7 +286,7 @@
                             srcset="./images/team/mihail450.jpg 450w, ./images/team/mihail900.jpg 900w" 
                             src="./images/team/mihail450.jpg" 
                             alt="фото Михаила Ермакова" 
-                            sizes="(min-width: 1200) 16vw, (min-width: 768) 50vw, 95vw"
+                            sizes="(min-width: 1200px) 16vw, (min-width: 768px) 50vw, 95vw"
                         >
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="text team__position">UI Designer</p>

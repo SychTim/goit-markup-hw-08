@@ -1,5 +1,5 @@
 .modal__backdrop {
-    z-index: 1;
+    z-index: 15;
     position: fixed;
     height: 100%;
     width: 100%;
@@ -16,7 +16,8 @@
 
 .modal {
     position: absolute;
-    width: 528px;
+    width: 450px;
+    max-width: 100%;
     background-color: $background-color;
     top: 50%;
     left: 50%;
@@ -25,6 +26,10 @@
     padding: 40px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 1px 0 rgba(0, 0, 0, 0.14);
+
+    @media screen and (min-width: $desctop) {
+        width: 528px;
+    }
 }
 
 .is-hidden {
