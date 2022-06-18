@@ -26,6 +26,9 @@
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     text-align: center;
-    // font-size: 36px;
-    // line-height: 1.16;
+    @media screen and (min-width: $desctop) {
+        font-size: 36px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
 }

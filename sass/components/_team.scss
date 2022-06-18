@@ -36,6 +36,10 @@
     }
 }
 
+.team__img {
+    width: 100%;
+}
+
 .team__name {
     margin-top: 30px;
     margin-bottom: 10px;
@@ -60,6 +64,14 @@
     padding-left: 32px;
     padding-top: 16px;
     padding-bottom: 30px;
+}
+
+.team__media-item {
+    @media screen and (min-width: $tablet) {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
 }
 
 .team__social-media {
