@@ -9,12 +9,18 @@
         flex-wrap: wrap;
         margin: -15px;
     }
+
+    @media screen and (min-width:$desctop) {
+        margin: 0px -15px;
+    }
 }
 
 .features__item {
     width: 100%;
-    &:not(:last-child) {
-        margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 
     @media screen and (min-width:$tablet) {
@@ -24,7 +30,7 @@
 
     @media screen and (min-width:$desctop) {
         width: 270px;
-        margin: 15px;
+        margin: 0px 15px;
     }
 }
 

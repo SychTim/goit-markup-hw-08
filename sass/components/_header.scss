@@ -14,7 +14,8 @@
         background-color: $background-color;
         width: 100vw;
         z-index: 8;
-        overflow-y: scroll;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
 
     @media screen and (min-width:$tablet) {
@@ -45,7 +46,7 @@
 }
 
 .is-open {
-    display: block;
+    display: flex;
 }
 
 .icon-cros {
@@ -73,7 +74,7 @@
 
 .nav {
     @media screen and (max-width: 767px) {
-        margin-bottom: 302px;
+        // margin-bottom: 302px;
     }
     @media screen and (min-width:$tablet) {
         display: flex;
@@ -153,16 +154,14 @@
 
 .header__kontakts {
     display: flex;
-    margin-left: auto;
-
     @media screen and (max-width: 767px) {
         flex-direction: column-reverse;
-        margin-bottom: 64px;
     }
 
     @media screen and (min-width: $tablet) {
         flex-direction: column;
         justify-content: center;
+        margin-left: auto;
     }
 
     @media screen and (min-width: $desctop) {
