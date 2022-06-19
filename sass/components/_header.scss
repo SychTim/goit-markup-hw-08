@@ -74,7 +74,7 @@
 
 .nav {
     @media screen and (max-width: 767px) {
-        // margin-bottom: 302px;
+        width: 100%;
     }
     @media screen and (min-width:$tablet) {
         display: flex;
